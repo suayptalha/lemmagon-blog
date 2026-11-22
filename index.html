@@ -205,32 +205,47 @@
       max-width: 72ch;
     }
 
-    .authors-row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 10px 22px;
-      font-size: 14px;
-      color: var(--text);
+    .authors-block {
       padding-bottom: 22px;
       border-bottom: 1px solid var(--border);
     }
 
-    .authors-row .inst {
+    .authors-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 22px;
+      font-size: 14.5px;
+      color: var(--text);
+    }
+
+    .authors-block .inst {
       color: var(--text-muted);
       font-family: 'JetBrains Mono', monospace;
       font-size: 12.5px;
     }
 
-    .authors-row a {
+    .authors-block a {
       color: var(--text-strong);
       text-decoration: none;
       border-bottom: 1px dotted var(--border-strong);
     }
 
-    .authors-row a:hover {
+    .authors-block a:hover {
       color: var(--accent);
       border-bottom-color: var(--accent);
+    }
+
+    .corresp-line {
+      margin-top: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12.2px;
+      color: var(--text-muted);
+    }
+
+    .corresp-line a {
+      color: var(--accent);
+      border-bottom: 1px dotted rgba(92, 200, 255, 0.35);
     }
 
     .hero-actions {
@@ -838,14 +853,19 @@
         Rival LLM research programmes evolve modular theory graphs, attack each other with executable counterexample regimes, and trade content-addressed lemmas—tested against strictly sealed extrapolation holdouts across six scientific domains.
       </p>
 
-      <div class="authors-row">
-        <span>
-          <a href="https://github.com/suayptalha" target="_blank" rel="noopener noreferrer">Şuayp Talha Kocabay</a><sup>*</sup>
-          &nbsp;&middot;&nbsp;
-          Kerem Yalçın
-        </span>
-        <span class="inst">TÜBİTAK Science High School</span>
-        <span class="inst">Apache-2.0</span>
+      <div class="authors-block">
+        <div class="authors-row">
+          <span>
+            <a href="https://github.com/suayptalha" target="_blank" rel="noopener noreferrer">Şuayp Talha Kocabay</a><sup>*</sup>
+            &nbsp;&middot;&nbsp;
+            Kerem Yalçın
+          </span>
+          <span class="inst">TÜBİTAK Science High School</span>
+          <span class="inst">Apache-2.0</span>
+        </div>
+        <div class="corresp-line">
+          <sup>*</sup> Corresponding author: <a href="mailto:kocabaysuayptalha08@gmail.com">kocabaysuayptalha08@gmail.com</a>
+        </div>
       </div>
 
       <div class="hero-actions">
